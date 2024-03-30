@@ -1,0 +1,493 @@
+:root{
+    --fontClr: #ececec;
+    --bgClr: #000000;
+}
+
+@font-face {
+    font-family: "Quantify";
+    src: url("FONTS/Quantify/Quantify.ttf");
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url("FONTS/Montserrat/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url("FONTS/Montserrat/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "MontserratMedium";
+    src: url("FONTS/Montserrat/Montserrat-Medium.otf");
+}
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("FONTS/Montserrat/Montserrat-Regular.otf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Margin will be changed to fit tablet and phone view */
+    margin: 0 144px; 
+
+    background-color: var(--bgClr);
+    color: var(--fontClr);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+nav ul{
+    display: flex;
+    user-select: none;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-family: "MontserratSemiBold";
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;    
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+    border-radius: 50px;
+    padding: 10px 35px;
+    text-align: center;
+    color: var(--fontClr);
+    background: rgb(180,26,26);
+    background: -moz-linear-gradient(180deg, rgba(180,26,26,1) 0%, rgba(255,53,53,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(180,26,26,1) 0%, rgba(255,53,53,1) 100%);
+    background: linear-gradient(180deg, rgba(180,26,26,1) 0%, rgba(255,53,53,1) 100%);
+}
+
+.burger{
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .burger i::before{
+    font-size: 40px;
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* For main container */
+.container{
+    margin: 0 95px;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.introduction h1{
+    font-family: "Quantify";
+    font-size: 140px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 15px;
+    position: relative;
+    width: fit-content;
+
+    background: rgb(0,243,252);
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.introduction h1::before{
+    position: absolute;
+    display: block;
+    background: rgb(0,243,252);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "-";
+    left: -90px;
+    top: 0;
+}
+
+.introduction h1::after{
+    position: absolute;
+    display: block;
+    background: rgba(255,10,3,1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    content: "-";
+    right: -90px;
+    top: 0;
+}
+
+.introduction h4{
+    font-family: "MontserratBold";
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    max-width: 900px;
+
+    background: rgb(0,243,252);
+    background: -moz-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,243,252,1) 0%, rgba(226,95,95,1) 80%, rgba(255,0,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.additionalInfo{
+    margin-top: 36px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additionalInfo p{
+    font-family: "MontserratRegular";
+    font-size: 18px;
+    text-align: center;
+    max-width: 1000px;
+}
+
+.additionalInfo .voteBtn{
+    font-family: "Montserrat";
+    font-size: 23.04px;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 36px;
+
+    background: rgb(180,26,26);
+    background: -moz-linear-gradient(180deg, rgba(180,26,26,1) 0%, rgba(255,53,53,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(180,26,26,1) 0%, rgba(255,53,53,1) 100%);
+    background: linear-gradient(180deg, rgba(180,26,26,1) 0%, rgba(255,53,53,1) 100%);
+}
+
+.additionalInfo #gifAnimation{
+    mix-blend-mode: lighten;
+    height: fit-content;
+    width: 100%;
+    max-width: 900px;
+    z-index: -1;
+    margin-top: -110px;
+}
+
+.partners{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners h4{
+    font-family: "Quantify";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.partners img{
+    mix-blend-mode: hard-light;
+    width: calc(100% + 180px);
+}
+
+.about{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h4{
+    margin: 0 0 36px 0;
+    font-family: "Quantify";
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.about p{
+    font-family: "MontserratRegular";
+    font-size: 18px;
+    text-align: center;
+    max-width: 960px;
+}
+
+.imageContainer{
+    width: 100%;
+    max-width: 1419px;
+    margin-top: 36px;
+}
+
+.swiper-slide.tranding-slid{
+    display: block;
+    width: 400px;
+}
+
+.imageContainer img{
+    width: 400px;
+    margin: 0;
+}
+
+.FAQ{
+    margin-top: 160px;
+    width: 100%;
+    max-width: 1200px;
+    height: 660px;
+    background-image: url("ELEMENTS/GLASS/DESKTOP.png");
+    background-size: fill;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 160px 0;
+}
+
+.FAQ h4{
+    margin: 0 30px 60px 30px;
+    font-family: "Quantify";
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.FAQ h3{
+    margin: 0 30px 30px 30px;
+    font-family: "MontserratBold";
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.FAQ p{
+    margin: 0 30px 30px 30px;
+    font-family: "MontserratRegular";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 600px;
+}
+
+.FAQContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer h4{
+    font-family: "Quantify";
+    font-weight: 500;
+    font-size:200px;
+    margin: 0;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin: 0 20px;
+    gap: 135px;
+    width: 100%;
+}
+
+.socialMedia, .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.socialMedia p, .email p{
+    text-align: center;
+}
+
+.email p:nth-child(2){
+    font-weight: 500;
+}
+
+.footer hr{
+    width: 100%;
+    max-width: 1100px;
+}
+
+.footer p{
+    font-weight: 800;
+}
+
+@media (max-width: 1600px) {
+    .footer h4{
+        font-size: 160px;
+    }
+}
+
+@media (max-width: 1400px){
+    .footer h4{
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 1250px){
+    .footer h4{
+        font-size: 110px;
+    }
+}
+
+/* For tablet view */
+@media (max-width: 1200px) {
+    body{
+        margin: 0 50px;
+    }
+
+    /* Changing navigation bar */
+    nav ul{
+        display: none;
+    }
+
+    nav .burger{
+        display: block;
+    }
+
+    /* Changing font sizes */
+    .introduction h1{ font-size: 110px; }
+    .introduction h4{ font-size: 24px;  }
+    .additionalInfo p{ font-size: 18px; }
+    .about p{ font-size: 16px; }
+
+    .swiper-slide.tranding-slid{
+        width: 300px;
+    }
+
+    .imageContainer img{
+        width: 300px;
+    }
+
+    .footerContainer{
+        gap: 30px;
+    }
+}
+
+/* For phone view */
+@media (max-width: 800px) {
+    body{
+        margin: 0 20px;
+    }
+
+    .container{
+        margin: 0 40px;
+    }
+
+    /* Changing font sizes */
+    .introduction h1{ 
+        font-size: 80px; 
+        margin-bottom: 20px;
+    }
+
+    .introduction h1::before{
+        left: -40px;
+    }
+
+    .introduction h1::after{
+        right: -40px;
+    }
+
+    .introduction h4{ 
+        font-size: 18px; 
+    }
+
+    .about h4{
+        font-size: 48px;
+    }
+
+    .about p{
+        font-size: 14px;
+    }
+
+    .additionalInfo #gifAnimation{
+        order: 1;
+        margin-top: -90px;
+    }
+
+    .additionalInfo p{ 
+        order: 2;
+        font-size: 14px; 
+    }
+
+    .additionalInfo .voteBtn{
+        order: 3;
+    }
+
+    .partners img{
+        width: calc(100% + 80px);
+    }
+
+    .swiper-slide.tranding-slid{
+        width: 250px;
+    }
+
+    .imageContainer img{
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 900px){
+    .FAQ{
+        height: 760px;
+    }
+}
+
+@media (max-width: 850px){
+    .FAQ{
+        width: 700px;
+        height: 960px;
+        background-image: url("ELEMENTS/GLASS/MOBILE.png");
+    }
+
+    .FAQ p{
+        margin: 0 50px 30px 50px;
+    }
+
+    .footer h4{
+        font-size: 90px;
+    }
+}
+
