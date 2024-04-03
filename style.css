@@ -34,6 +34,7 @@ body{
     box-sizing: border-box;
     /* Margin will be changed to fit tablet and phone view */
     margin: 0 144px; 
+    overflow: hidden;
 
     background-color: var(--bgClr);
     color: var(--fontClr);
