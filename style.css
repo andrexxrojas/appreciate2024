@@ -491,3 +491,9 @@ nav .burger i::before{
     }
 }
 
+@media only screen and (max-width: 800px){
+    .container{
+        margin: 0 5px;
+    }
+}
+
