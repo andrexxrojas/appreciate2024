@@ -34,9 +34,6 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-x: clip !important;
-    background-image: url("BACKGROUND/DESKTOP/MAIN\ BG\ 1.png"), url("BACKGROUND/DESKTOP/MAIN\ BG\ 3.png");
-    background-repeat: repeat-y;
-    background-size: 100%;
 
     /* Margin will be changed to fit tablet and phone view */
     margin: 0 144px; 
