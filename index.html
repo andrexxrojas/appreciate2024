@@ -11,23 +11,55 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <img src="NAV BAR/LOGO.png" alt="Appreciate 2024 logo">
-        </div>
+    <header class="active">
+        <nav>
+            <div class="logo">
+                <img src="NAV BAR/LOGO.png" alt="Appreciate 2024 logo">
+            </div>
+    
+            <ul>
+                <li>Home</li>
+                <li>Book of Abstracts</li>
+                <li class="voteBtn">Log in</li>
+            </ul>
+    
+            <div class="burger">
+                <img src="NAV BAR/MOBILE/ci_hamburger-lg.png" alt="">
+            </div>
+        </nav>
 
-        <ul>
-            <li>Home</li>
-            <li>Book of Abstracts</li>
-            <li class="voteBtn">Log in</li>
-        </ul>
+        <div class="mobileNavContainer">
+            <div class="closeBtn">
+                <img src="NAV BAR/TABLET/Rectangle 388.png" alt="">
+            </div>
 
-        <div class="burger">
-            <i class="fa-solid fa-bars fa-2xl"></i>
+            <ul class="mobile-menu">
+                <div class="logo"><img src="NAV BAR/LOGO.png" alt="Appreciate 2024 logo"></div>
+    
+                <div class="mobileNav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Book of Abstracts</a></li>
+                    <li><a href="">Login</a></li>
+                </div>               
+            </ul>
         </div>
-    </nav>
+    </header>
 
     <div class="container">
+        <div class="wave" id="orangeWave">
+        </div>
+
+        <div class="wave" id="blueWaveOne">
+        </div>
+
+        <div class="bgContainer">
+            <div class="outer">
+                <div class="inner"><img src="BACKGROUND/DESKTOP/MAIN BG 1.png" alt=""></div>
+                <div class="inner"><img src="BACKGROUND/DESKTOP/MAIN BG 2.png" alt=""></div>
+                <div class="inner"><img src="BACKGROUND/DESKTOP/MAIN BG 3.png" alt=""></div>
+                <div class="inner"><img src="BACKGROUND/DESKTOP/MAIN BG 1.png" alt=""></div>
+            </div>
+        </div>     
 
         <!-- Introduction -->
         <div class="introduction">
@@ -131,7 +163,7 @@
         </div>
 
         <!-- Footer -->
-    <div class="footer">
+        <div class="footer">
         <h4>Get In Touch</h4>
         <div class="footerContainer">
             <img id="footerLogo" src="ELEMENTS/FOOTER/Main Logo 2.png" alt="">
@@ -146,8 +178,11 @@
         </div>
         <hr>
         <p>&#169 2024 APPRECIATE - TUP MANILA</p>
-    </div>
-        
+        </div>
+<!--         
+        <div class="wave" id="blueWaveTwo"></div> -->
+<!-- 
+        <img src="ELEMENTS/WAVES/DESKTOP/BLUE WAVES (FOOTER).png" alt=""> -->
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
